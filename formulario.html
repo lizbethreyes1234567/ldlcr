@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <title>manejo de formularios con html5</title>
+        </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <!---
+        txt es un control de tipo de texto
+        rd control de radio
+        chk es un control de checkbox
+        cbox es un control de tipo list, dropdonwlist o comboxbox
+        lb control de tipo label
+        img control de imagen
+        btn control de tipo boton o submit
+
+        los nombres de variables controles clases deben tener la notacion pascal
+
+        --->
+        <form action="pagina_procesa_datos">
+            <input id="txtNombre" type="text" placeholder=" Ingresa tu nombre completo"  width="80px" required><br>
+
+            <br>
+            <label><input id="rdH" type="radio" name="sexo">Hombre
+            <label><input id="rdM"type="radio"name="sexo">Mujer
+                <br>
+               <label><input id= "CKISC" type="checkbox">ISC</label> 
+                    <label><input id= "CKIGE" type="checkbox">IGE</label>
+                       <label><input id= "CKIDC" type="checkbox">IDC</label> 
+                <br>
+                <input type="email" placeholder="Ingresa correo institucional" required>
+                <input type="tel" placeholder="Ingresa tú teléfono">
+                <input type="number" placeholder="Edad" min="18" max="50">
+                <input type="range" placeholder="Costo" min="1200" max="1600">
+                <input type="datetime-local" placeholder="Fechas">
+                <input type="color" placeholder="Color">
+
+            <button type="submit">Enviar</button>
+        
+        </form>
+        
+    </body>
+
+    </head>
+</html>
